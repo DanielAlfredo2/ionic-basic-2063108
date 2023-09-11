@@ -7,12 +7,8 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'alumnos',
     pathMatch: 'full'
-  },
-  {
-    path: 'presupuesto',
-    loadChildren: () => import('./presupuesto/presupuesto.module').then( m => m.PresupuestoPageModule)
   },
   {
     path: 'alumnos',
@@ -25,6 +21,14 @@ const routes: Routes = [
   {
     path: 'receptor',
     loadChildren: () => import('./receptor/receptor.module').then( m => m.ReceptorPageModule)
+  },
+  {
+    path: 'receta',
+    loadChildren: () => import('./receta/receta.module').then( m => m.RecetaPageModule)
+  },
+  {
+    path: 'detalle-receta',
+    loadChildren: () => import('./detalle-receta/detalle-receta.module').then( m => m.DetalleRecetaPageModule)
   },
 ];
 
