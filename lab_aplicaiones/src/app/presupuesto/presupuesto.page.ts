@@ -28,7 +28,7 @@ export class PresupuestoPage implements OnInit {
   };
 
   cambioValor(value: any){
-    //console.log(value);
+    console.log(value);
   }
   guardar(){
     this.resultados ="";
